@@ -1,3 +1,5 @@
+using AutoParts.UserForm;
+
 namespace AutoParts
 {
     public partial class LoginForm : Form
@@ -23,6 +25,9 @@ namespace AutoParts
             {
                 LoginBox.Text = string.Empty;
                 PasswordBox.Text = string.Empty;
+                Program.context.MainForm = new TableForm();
+                Program.context.MainForm.Show();
+                this.Close();
             }
 
             
