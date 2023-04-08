@@ -28,43 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView = new DataGridView();
-            search = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
-            SuspendLayout();
+            this.dtgv = new System.Windows.Forms.DataGridView();
+            this.search = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            this.SuspendLayout();
             // 
-            // dataGridView
+            // dtgv
             // 
-            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Location = new Point(37, 54);
-            dataGridView.Name = "dataGridView";
-            dataGridView.RowTemplate.Height = 25;
-            dataGridView.Size = new Size(888, 403);
-            dataGridView.TabIndex = 0;
+            this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv.Location = new System.Drawing.Point(37, 54);
+            this.dtgv.Name = "dtgv";
+            this.dtgv.RowTemplate.Height = 25;
+            this.dtgv.Size = new System.Drawing.Size(888, 403);
+            this.dtgv.TabIndex = 0;
             // 
             // search
             // 
-            search.Location = new Point(109, 25);
-            search.Name = "search";
-            search.Size = new Size(726, 23);
-            search.TabIndex = 1;
+            this.search.Location = new System.Drawing.Point(109, 25);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(726, 23);
+            this.search.TabIndex = 1;
             // 
             // TableControl
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(search);
-            Controls.Add(dataGridView);
-            Name = "TableControl";
-            Size = new Size(1012, 515);
-            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.search);
+            this.Controls.Add(this.dtgv);
+            this.Name = "TableControl";
+            this.Size = new System.Drawing.Size(1012, 515);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private DataGridView dataGridView;
+        private DataGridView dtgv;
         private TextBox search;
     }
 }

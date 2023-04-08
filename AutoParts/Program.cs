@@ -15,7 +15,7 @@ namespace AutoParts
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            context.MainForm = new TableViewForm();
+            context.MainForm = new LoginForm();
             Application.Run(context);
         }
     }
